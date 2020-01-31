@@ -881,18 +881,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mgm-Hf-ulv"/>
                     <connections>
-                        <outlet property="AgeT" destination="cNg-Tf-ATG" id="xkn-00-A5m"/>
-                        <outlet property="DBPT" destination="jlT-nm-z6v" id="1Nd-nq-CZX"/>
-                        <outlet property="GenderT" destination="RwN-ay-rMp" id="BCu-4Y-ICD"/>
-                        <outlet property="HRT" destination="SRf-gc-h5M" id="GBa-Ri-EpF"/>
-                        <outlet property="HospAdmTimeT" destination="gpq-GG-Pu8" id="mVm-ah-Ttq"/>
-                        <outlet property="ICULOST" destination="K9c-BP-N0v" id="5Fj-jK-Wq2"/>
-                        <outlet property="MAPT" destination="AV7-RS-HHi" id="zxd-wy-JiA"/>
-                        <outlet property="O2SatT" destination="zbc-4s-KXq" id="LBp-Pa-XU3"/>
-                        <outlet property="RespT" destination="Upk-Wf-1U2" id="WmW-hU-UHD"/>
-                        <outlet property="SBPT" destination="q4z-8K-lHo" id="uh2-oO-vDt"/>
-                        <outlet property="Unit1T" destination="T3Z-MR-hwR" id="Fhv-9N-T0y"/>
-                        <outlet property="Unit2" destination="Ing-pj-zwb" id="zfn-yH-hLB"/>
+                        <outletCollection property="SepsisText" destination="yKg-Au-p1D" collectionClass="NSMutableArray" id="jZS-g7-dIr"/>
+                        <outletCollection property="SepsisText" destination="SRf-gc-h5M" collectionClass="NSMutableArray" id="Z1W-1z-cL5"/>
+                        <outletCollection property="SepsisText" destination="zbc-4s-KXq" collectionClass="NSMutableArray" id="cXG-S1-clM"/>
+                        <outletCollection property="SepsisText" destination="zbc-4s-KXq" collectionClass="NSMutableArray" id="tf5-vw-XZr"/>
+                        <outletCollection property="SepsisText" destination="q4z-8K-lHo" collectionClass="NSMutableArray" id="xoU-ab-5hH"/>
+                        <outletCollection property="SepsisText" destination="AV7-RS-HHi" collectionClass="NSMutableArray" id="798-yY-WGz"/>
+                        <outletCollection property="SepsisText" destination="Upk-Wf-1U2" collectionClass="NSMutableArray" id="Vi0-Zy-QlH"/>
+                        <outletCollection property="SepsisText" destination="jlT-nm-z6v" collectionClass="NSMutableArray" id="iW2-1U-grS"/>
+                        <outletCollection property="SepsisText" destination="cNg-Tf-ATG" collectionClass="NSMutableArray" id="zi0-dH-ZV2"/>
+                        <outletCollection property="SepsisText" destination="RwN-ay-rMp" collectionClass="NSMutableArray" id="ntW-fK-sFk"/>
+                        <outletCollection property="SepsisText" destination="T3Z-MR-hwR" collectionClass="NSMutableArray" id="oLv-kb-JvM"/>
+                        <outletCollection property="SepsisText" destination="Ing-pj-zwb" collectionClass="NSMutableArray" id="a63-EL-g88"/>
+                        <outletCollection property="SepsisText" destination="gpq-GG-Pu8" collectionClass="NSMutableArray" id="aEM-cW-6ot"/>
+                        <outletCollection property="SepsisText" destination="K9c-BP-N0v" collectionClass="NSMutableArray" id="dGb-dJ-0fp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ha-Xr-Nk5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
