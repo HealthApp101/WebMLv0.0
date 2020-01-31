@@ -1108,16 +1108,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZtL-K5-qgH"/>
                     <connections>
-                        <outlet property="ageT" destination="Bsc-j8-KPs" id="qOd-Gi-oJR"/>
-                        <outlet property="alamineAdminT" destination="BID-Xe-U0I" id="Erc-bf-KRF"/>
-                        <outlet property="albuminGloT" destination="wQN-mC-iZz" id="5zs-XK-L8d"/>
-                        <outlet property="alkalinePhosT" destination="CON-G1-PvP" id="V98-tc-xwQ"/>
-                        <outlet property="alnuminT" destination="Tif-yZ-ki4" id="kcR-aO-GJp"/>
-                        <outlet property="asparateAminoT" destination="5jY-o4-okT" id="EAc-9J-G7f"/>
-                        <outlet property="directBillT" destination="nyi-C9-m92" id="djF-aR-X9k"/>
-                        <outlet property="genderT" destination="bsd-8y-27j" id="xN2-KV-Sia"/>
-                        <outlet property="protienT" destination="uwC-P2-rcm" id="Wcc-sa-Y1J"/>
-                        <outlet property="totalBillT" destination="c9W-qM-vZ1" id="xuh-BM-Kw9"/>
+                        <outletCollection property="LiverTextField" destination="Bsc-j8-KPs" collectionClass="NSMutableArray" id="LMa-Xo-6ED"/>
+                        <outletCollection property="LiverTextField" destination="bsd-8y-27j" collectionClass="NSMutableArray" id="ay0-l9-Abv"/>
+                        <outletCollection property="LiverTextField" destination="c9W-qM-vZ1" collectionClass="NSMutableArray" id="adI-Ng-gHI"/>
+                        <outletCollection property="LiverTextField" destination="nyi-C9-m92" collectionClass="NSMutableArray" id="SN8-kD-Sh1"/>
+                        <outletCollection property="LiverTextField" destination="CON-G1-PvP" collectionClass="NSMutableArray" id="PnE-Xi-fq3"/>
+                        <outletCollection property="LiverTextField" destination="BID-Xe-U0I" collectionClass="NSMutableArray" id="8zQ-ZA-wl5"/>
+                        <outletCollection property="LiverTextField" destination="5jY-o4-okT" collectionClass="NSMutableArray" id="0SK-aq-fHk"/>
+                        <outletCollection property="LiverTextField" destination="uwC-P2-rcm" collectionClass="NSMutableArray" id="DB6-F5-h5g"/>
+                        <outletCollection property="LiverTextField" destination="Tif-yZ-ki4" collectionClass="NSMutableArray" id="35e-3J-kd2"/>
+                        <outletCollection property="LiverTextField" destination="wQN-mC-iZz" collectionClass="NSMutableArray" id="VU4-dh-4SP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLh-D8-hW9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

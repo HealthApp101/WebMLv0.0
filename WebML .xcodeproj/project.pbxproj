@@ -16,6 +16,7 @@
 		FF4FB1AB23E493AF0033D1C9 /* breast_cancer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB1A423E493AF0033D1C9 /* breast_cancer.mlmodel */; };
 		FF4FB1AC23E493AF0033D1C9 /* ham10000.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB1A523E493AF0033D1C9 /* ham10000.mlmodel */; };
 		FF4FB1AD23E493AF0033D1C9 /* SkinCancer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB1A623E493AF0033D1C9 /* SkinCancer.mlmodel */; };
+		FF4FB1AF23E494E90033D1C9 /* Liver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB1AE23E494E90033D1C9 /* Liver.swift */; };
 		FF7FB39823DD71CE0033F58D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB39723DD71CE0033F58D /* AppDelegate.swift */; };
 		FF7FB39A23DD71CE0033F58D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB39923DD71CE0033F58D /* SceneDelegate.swift */; };
 		FF7FB39C23DD71CE0033F58D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB39B23DD71CE0033F58D /* HomeVC.swift */; };
@@ -45,6 +46,7 @@
 		FF4FB1A423E493AF0033D1C9 /* breast_cancer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = breast_cancer.mlmodel; sourceTree = "<group>"; };
 		FF4FB1A523E493AF0033D1C9 /* ham10000.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ham10000.mlmodel; sourceTree = "<group>"; };
 		FF4FB1A623E493AF0033D1C9 /* SkinCancer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SkinCancer.mlmodel; sourceTree = "<group>"; };
+		FF4FB1AE23E494E90033D1C9 /* Liver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liver.swift; sourceTree = "<group>"; };
 		FF7FB39423DD71CE0033F58D /* WebML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7FB39723DD71CE0033F58D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF7FB39923DD71CE0033F58D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				FF4FB19E23E476EA0033D1C9 /* BreastCancer.swift */,
+				FF4FB1AE23E494E90033D1C9 /* Liver.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				FF4FB1A723E493AF0033D1C9 /* diabetesmlmodel.mlmodel in Sources */,
 				FF4FB1A923E493AF0033D1C9 /* heartdisease.mlmodel in Sources */,
 				FF7FB3B123DD76710033F58D /* SkinCancerViewController.swift in Sources */,
+				FF4FB1AF23E494E90033D1C9 /* Liver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

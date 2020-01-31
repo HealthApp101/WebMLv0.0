@@ -10,42 +10,34 @@ import UIKit
 import CoreML
 
 class LiverVC : UIViewController, UINavigationControllerDelegate{
-    @IBOutlet weak var ageT: UITextField!
-    @IBOutlet weak var totalBillT: UITextField!
-    @IBOutlet weak var directBillT: UITextField!
-    @IBOutlet weak var alkalinePhosT: UITextField!
-    @IBOutlet weak var alamineAdminT: UITextField!
-    @IBOutlet weak var asparateAminoT: UITextField!
-    @IBOutlet weak var protienT: UITextField!
-    @IBOutlet weak var alnuminT: UITextField!
-    @IBOutlet weak var albuminGloT: UITextField!
-    @IBOutlet weak var genderT: UITextField!
+
+    @IBOutlet var LiverTextField: [UITextField]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     func detect(){
-        let model = liver()
-        let age = Double(ageT.text!) ?? 44.74
-        let totalBill = Double(totalBillT.text!) ?? 3.298
-        let directBill = Double(directBillT.text!) ?? 1.486
-        let alkalinePhos = Double(alkalinePhosT.text!) ?? 290.576
-        let alamine = Double(alamineAdminT.text!) ?? 80.71
-        let asparate = Double(asparateAminoT.text!) ?? 109.91
-        let protien = Double(protienT.text!) ?? 6.483
-        let alnumin = Double(alnuminT.text!) ?? 3.14
-        let albumin = Double(albuminGloT.text!) ?? 0.947
-        let gender = Double(genderT.text!) ?? 0.3
-        guard let output = try? model.prediction(Age: age, Gender: gender, Total_Bilirubin: totalBill, Direct_Bilirubin: directBill, Alkaline_Phosphotase: alkalinePhos, Alamine_Aminotransferase: alamine, Aspartate_Aminotransferase: asparate, Total_Protiens: protien, Albumin: albumin, Albumin_and_Globulin_Ratio: albumin) else{
+        
+        guard let output = try? Liver.model.prediction(Age: Liver.Variables[0], Gender: Liver.Variables[1], Total_Bilirubin: Liver.Variables[2], Direct_Bilirubin: Liver.Variables[3], Alkaline_Phosphotase: Liver.Variables[4], Alamine_Aminotransferase: Liver.Variables[4], Aspartate_Aminotransferase: Liver.Variables[5], Total_Protiens: Liver.Variables[6], Albumin: Liver.Variables[7], Albumin_and_Globulin_Ratio: Liver.Variables[8]) else{
             fatalError()
         }
+       
         let result = output.Dataset
         print(result)
         self.navigationItem.title = "\(result)"
     }
     
     @IBAction func submitPressed(_ sender: Any) {
+        var count = 0
+        for textfields in LiverTextField{
+            Liver.Variables.append(Double(textfields.text!) ?? Liver.mean[count])
+            
+            count = count+1
+        }
         detect()
+        for textfields in LiverTextField {
+            textfields.text = " "
+        }
     }
 }
