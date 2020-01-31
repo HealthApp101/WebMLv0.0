@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33EE8D3E2932D917CDA42E55 /* Pods_WebML_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D73E282DE786DB221092D /* Pods_WebML_.framework */; };
+		FF7FB39823DD71CE0033F58D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB39723DD71CE0033F58D /* AppDelegate.swift */; };
+		FF7FB39A23DD71CE0033F58D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB39923DD71CE0033F58D /* SceneDelegate.swift */; };
+		FF7FB39C23DD71CE0033F58D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB39B23DD71CE0033F58D /* HomeVC.swift */; };
+		FF7FB39F23DD71CE0033F58D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7FB39D23DD71CE0033F58D /* Main.storyboard */; };
+		FF7FB3A123DD71CF0033F58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7FB3A023DD71CF0033F58D /* Assets.xcassets */; };
+		FF7FB3A423DD71CF0033F58D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7FB3A223DD71CF0033F58D /* LaunchScreen.storyboard */; };
+		FF7FB3AF23DD736B0033F58D /* LiverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3AE23DD736B0033F58D /* LiverVC.swift */; };
+		FF7FB3B123DD76710033F58D /* SkinCancerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3B023DD76710033F58D /* SkinCancerViewController.swift */; };
+		FF7FB3B323DDC6560033F58D /* heartdisease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3B223DDC6560033F58D /* heartdisease.mlmodel */; };
+		FF7FB3B523DDC6990033F58D /* HeartDiseaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3B423DDC6990033F58D /* HeartDiseaseVC.swift */; };
+		FF7FB3B923DDF00B0033F58D /* SkinCancer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3B823DDF00B0033F58D /* SkinCancer.mlmodel */; };
+		FF7FB3BB23DDFA430033F58D /* HamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3BA23DDFA430033F58D /* HamVC.swift */; };
+		FF7FB3BF23DE02670033F58D /* ham10000.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3BE23DE02670033F58D /* ham10000.mlmodel */; };
+		FF7FB3C123DE038D0033F58D /* breast_cancer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3C023DE038D0033F58D /* breast_cancer.mlmodel */; };
+		FF7FB3C323DE03950033F58D /* diabetesmlmodel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3C223DE03950033F58D /* diabetesmlmodel.mlmodel */; };
+		FF7FB3C523DE039E0033F58D /* sepsis.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3C423DE039E0033F58D /* sepsis.mlmodel */; };
+		FF7FB3C723DE04E20033F58D /* DiabetesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3C623DE04E20033F58D /* DiabetesVC.swift */; };
+		FF7FB3CB23DE0EB50033F58D /* BreastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3CA23DE0EB50033F58D /* BreastVC.swift */; };
+		FF7FB3CD23DE93EA0033F58D /* liver.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3CC23DE93EA0033F58D /* liver.mlmodel */; };
+		FF7FB3CF23DE97690033F58D /* SepsisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FB3CE23DE97690033F58D /* SepsisVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006F5CF4521B55FC55F80AA6 /* Pods-HealthCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthCare.debug.xcconfig"; path = "Target Support Files/Pods-HealthCare/Pods-HealthCare.debug.xcconfig"; sourceTree = "<group>"; };
+		770D73E282DE786DB221092D /* Pods_WebML_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebML_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9EDD1BC432AE7449534269 /* Pods-WebML .debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebML .debug.xcconfig"; path = "Target Support Files/Pods-WebML /Pods-WebML .debug.xcconfig"; sourceTree = "<group>"; };
+		96FE94753E965232AA5083E6 /* Pods-HealthCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthCare.release.xcconfig"; path = "Target Support Files/Pods-HealthCare/Pods-HealthCare.release.xcconfig"; sourceTree = "<group>"; };
+		9813A8D6FB395DF06C9A600D /* Pods-WebML .release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebML .release.xcconfig"; path = "Target Support Files/Pods-WebML /Pods-WebML .release.xcconfig"; sourceTree = "<group>"; };
+		FF7FB39423DD71CE0033F58D /* WebML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7FB39723DD71CE0033F58D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF7FB39923DD71CE0033F58D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF7FB39B23DD71CE0033F58D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FF7FB39E23DD71CE0033F58D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF7FB3A023DD71CF0033F58D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF7FB3A323DD71CF0033F58D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF7FB3A523DD71CF0033F58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7FB3AE23DD736B0033F58D /* LiverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverVC.swift; sourceTree = "<group>"; };
+		FF7FB3B023DD76710033F58D /* SkinCancerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinCancerViewController.swift; sourceTree = "<group>"; };
+		FF7FB3B223DDC6560033F58D /* heartdisease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = heartdisease.mlmodel; sourceTree = "<group>"; };
+		FF7FB3B423DDC6990033F58D /* HeartDiseaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartDiseaseVC.swift; sourceTree = "<group>"; };
+		FF7FB3B823DDF00B0033F58D /* SkinCancer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SkinCancer.mlmodel; path = ../../MLModels/SkinCancer.mlmodel; sourceTree = "<group>"; };
+		FF7FB3BA23DDFA430033F58D /* HamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamVC.swift; sourceTree = "<group>"; };
+		FF7FB3BE23DE02670033F58D /* ham10000.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ham10000.mlmodel; path = ../../MLModels/ham10000.mlmodel; sourceTree = "<group>"; };
+		FF7FB3C023DE038D0033F58D /* breast_cancer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = breast_cancer.mlmodel; sourceTree = "<group>"; };
+		FF7FB3C223DE03950033F58D /* diabetesmlmodel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = diabetesmlmodel.mlmodel; sourceTree = "<group>"; };
+		FF7FB3C423DE039E0033F58D /* sepsis.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sepsis.mlmodel; sourceTree = "<group>"; };
+		FF7FB3C623DE04E20033F58D /* DiabetesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetesVC.swift; sourceTree = "<group>"; };
+		FF7FB3CA23DE0EB50033F58D /* BreastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreastVC.swift; sourceTree = "<group>"; };
+		FF7FB3CC23DE93EA0033F58D /* liver.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = liver.mlmodel; sourceTree = "<group>"; };
+		FF7FB3CE23DE97690033F58D /* SepsisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepsisVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF7FB39123DD71CE0033F58D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EE8D3E2932D917CDA42E55 /* Pods_WebML_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6159A43C3AD9CD83C6A0E152 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				006F5CF4521B55FC55F80AA6 /* Pods-HealthCare.debug.xcconfig */,
+				96FE94753E965232AA5083E6 /* Pods-HealthCare.release.xcconfig */,
+				7D9EDD1BC432AE7449534269 /* Pods-WebML .debug.xcconfig */,
+				9813A8D6FB395DF06C9A600D /* Pods-WebML .release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D05786CAA1D5471A99281CF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				770D73E282DE786DB221092D /* Pods_WebML_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF7FB38B23DD71CE0033F58D = {
+			isa = PBXGroup;
+			children = (
+				FF7FB39623DD71CE0033F58D /* HealthCare */,
+				FF7FB39523DD71CE0033F58D /* Products */,
+				6159A43C3AD9CD83C6A0E152 /* Pods */,
+				D05786CAA1D5471A99281CF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF7FB39523DD71CE0033F58D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF7FB39423DD71CE0033F58D /* WebML.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF7FB39623DD71CE0033F58D /* HealthCare */ = {
+			isa = PBXGroup;
+			children = (
+				FF7FB3B223DDC6560033F58D /* heartdisease.mlmodel */,
+				FF7FB3B823DDF00B0033F58D /* SkinCancer.mlmodel */,
+				FF7FB3BE23DE02670033F58D /* ham10000.mlmodel */,
+				FF7FB3C023DE038D0033F58D /* breast_cancer.mlmodel */,
+				FF7FB3C223DE03950033F58D /* diabetesmlmodel.mlmodel */,
+				FF7FB3C423DE039E0033F58D /* sepsis.mlmodel */,
+				FF7FB3CC23DE93EA0033F58D /* liver.mlmodel */,
+				FF7FB3AB23DD71F70033F58D /* Controller */,
+				FF7FB39723DD71CE0033F58D /* AppDelegate.swift */,
+				FF7FB39923DD71CE0033F58D /* SceneDelegate.swift */,
+				FF7FB39D23DD71CE0033F58D /* Main.storyboard */,
+				FF7FB3A023DD71CF0033F58D /* Assets.xcassets */,
+				FF7FB3A223DD71CF0033F58D /* LaunchScreen.storyboard */,
+				FF7FB3A523DD71CF0033F58D /* Info.plist */,
+			);
+			path = HealthCare;
+			sourceTree = "<group>";
+		};
+		FF7FB3AB23DD71F70033F58D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF7FB3CA23DE0EB50033F58D /* BreastVC.swift */,
+				FF7FB3B023DD76710033F58D /* SkinCancerViewController.swift */,
+				FF7FB39B23DD71CE0033F58D /* HomeVC.swift */,
+				FF7FB3AE23DD736B0033F58D /* LiverVC.swift */,
+				FF7FB3B423DDC6990033F58D /* HeartDiseaseVC.swift */,
+				FF7FB3BA23DDFA430033F58D /* HamVC.swift */,
+				FF7FB3C623DE04E20033F58D /* DiabetesVC.swift */,
+				FF7FB3CE23DE97690033F58D /* SepsisVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF7FB39323DD71CE0033F58D /* WebML  */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7FB3A823DD71CF0033F58D /* Build configuration list for PBXNativeTarget "WebML " */;
+			buildPhases = (
+				C8979E2540070163B1EDCD48 /* [CP] Check Pods Manifest.lock */,
+				FF7FB39023DD71CE0033F58D /* Sources */,
+				FF7FB39123DD71CE0033F58D /* Frameworks */,
+				FF7FB39223DD71CE0033F58D /* Resources */,
+				1DC1E41FCE985F5C7BC24879 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WebML ";
+			productName = HealthCare;
+			productReference = FF7FB39423DD71CE0033F58D /* WebML.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF7FB38C23DD71CE0033F58D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Pushpinder Pal Singh";
+				TargetAttributes = {
+					FF7FB39323DD71CE0033F58D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FF7FB38F23DD71CE0033F58D /* Build configuration list for PBXProject "WebML " */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF7FB38B23DD71CE0033F58D;
+			productRefGroup = FF7FB39523DD71CE0033F58D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF7FB39323DD71CE0033F58D /* WebML  */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF7FB39223DD71CE0033F58D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7FB3A423DD71CF0033F58D /* LaunchScreen.storyboard in Resources */,
+				FF7FB3A123DD71CF0033F58D /* Assets.xcassets in Resources */,
+				FF7FB39F23DD71CE0033F58D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DC1E41FCE985F5C7BC24879 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebML /Pods-WebML -frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebML /Pods-WebML -frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebML /Pods-WebML -frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8979E2540070163B1EDCD48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebML -checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF7FB39023DD71CE0033F58D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7FB3B323DDC6560033F58D /* heartdisease.mlmodel in Sources */,
+				FF7FB3BB23DDFA430033F58D /* HamVC.swift in Sources */,
+				FF7FB39C23DD71CE0033F58D /* HomeVC.swift in Sources */,
+				FF7FB3C123DE038D0033F58D /* breast_cancer.mlmodel in Sources */,
+				FF7FB3B923DDF00B0033F58D /* SkinCancer.mlmodel in Sources */,
+				FF7FB3C723DE04E20033F58D /* DiabetesVC.swift in Sources */,
+				FF7FB3AF23DD736B0033F58D /* LiverVC.swift in Sources */,
+				FF7FB3CD23DE93EA0033F58D /* liver.mlmodel in Sources */,
+				FF7FB3CF23DE97690033F58D /* SepsisVC.swift in Sources */,
+				FF7FB3CB23DE0EB50033F58D /* BreastVC.swift in Sources */,
+				FF7FB39823DD71CE0033F58D /* AppDelegate.swift in Sources */,
+				FF7FB3BF23DE02670033F58D /* ham10000.mlmodel in Sources */,
+				FF7FB3B523DDC6990033F58D /* HeartDiseaseVC.swift in Sources */,
+				FF7FB3C523DE039E0033F58D /* sepsis.mlmodel in Sources */,
+				FF7FB39A23DD71CE0033F58D /* SceneDelegate.swift in Sources */,
+				FF7FB3C323DE03950033F58D /* diabetesmlmodel.mlmodel in Sources */,
+				FF7FB3B123DD76710033F58D /* SkinCancerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF7FB39D23DD71CE0033F58D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF7FB39E23DD71CE0033F58D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF7FB3A223DD71CF0033F58D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF7FB3A323DD71CF0033F58D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF7FB3A623DD71CF0033F58D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF7FB3A723DD71CF0033F58D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF7FB3A923DD71CF0033F58D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9EDD1BC432AE7449534269 /* Pods-WebML .debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
+				INFOPLIST_FILE = HealthCare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.webML;
+				PRODUCT_NAME = WebML;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF7FB3AA23DD71CF0033F58D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9813A8D6FB395DF06C9A600D /* Pods-WebML .release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
+				INFOPLIST_FILE = HealthCare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.webML;
+				PRODUCT_NAME = WebML;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF7FB38F23DD71CE0033F58D /* Build configuration list for PBXProject "WebML " */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7FB3A623DD71CF0033F58D /* Debug */,
+				FF7FB3A723DD71CF0033F58D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7FB3A823DD71CF0033F58D /* Build configuration list for PBXNativeTarget "WebML " */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7FB3A923DD71CF0033F58D /* Debug */,
+				FF7FB3AA23DD71CF0033F58D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF7FB38C23DD71CE0033F58D /* Project object */;
+}
