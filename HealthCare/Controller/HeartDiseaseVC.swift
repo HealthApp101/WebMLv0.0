@@ -10,21 +10,9 @@ import UIKit
 import CoreML
 
 class HeartDiseaseVC : UIViewController {
-   
-    @IBOutlet weak var ageEntered: UITextField!
-    @IBOutlet weak var SexEntered: UITextField!
-    @IBOutlet weak var cpEntered: UITextField!
-    @IBOutlet weak var trestbpsEntered: UITextField!
-    @IBOutlet weak var oldpeakEntered: UITextField!
-    @IBOutlet weak var cholEntered: UITextField!
-    @IBOutlet weak var slopesEntered: UITextField!
-    @IBOutlet weak var restecgEntred: UITextField!
-    @IBOutlet weak var thalachEntered: UITextField!
-    @IBOutlet weak var caEntered: UITextField!
-    @IBOutlet weak var fbsEntered: UITextField!
-    @IBOutlet weak var thalEntered: UITextField!
-    @IBOutlet weak var exandEntered: UITextField!
 
+    @IBOutlet var heartTextfields: [UITextField]!
+    
     
     
     override func viewDidLoad() {
@@ -32,22 +20,8 @@ class HeartDiseaseVC : UIViewController {
     }
     
     func detect(){
-        let model = heartdisease()
-        let age = Double(ageEntered.text!) ?? 54.43
-        let sex = Double(SexEntered.text!) ?? 0.69
-        let cp = Double(cpEntered.text!) ?? 0.9
-        let trestbps = Double(trestbpsEntered.text!) ?? 131.611
-        let oldpeak = Double(oldpeakEntered.text!) ?? 1.07
-        let chol = Double(cholEntered.text!) ?? 246.00
-        let slopes = Double(slopesEntered.text!) ?? 1.38
-        let restecg = Double(restecgEntred.text!) ?? 0.5
-        let thalach = Double(thalachEntered.text!) ?? 149.11
-        let ca = Double(caEntered.text!) ?? 0.75
-        let fbs = Double(fbsEntered.text!) ?? 0.149
-        let thal = Double(thalachEntered.text!) ?? 2.32
-        let exand = Double(exandEntered.text!) ?? 0.33
         
-        guard let output = try? model.prediction(age: age, sex: sex, cp: cp, trestbps: trestbps, chol: chol, fbs: fbs, restecg: restecg, thalach: thalach, exang: exand, oldpeak: oldpeak, slopes: slopes, ca: ca, thal: thal) else {
+        guard let output = try? HeartDisease.model.prediction(age: HeartDisease.Variables[0], sex: HeartDisease.Variables[1], cp: HeartDisease.Variables[2], trestbps: HeartDisease.Variables[3], chol: HeartDisease.Variables[4], fbs: HeartDisease.Variables[5], restecg: HeartDisease.Variables[6], thalach: HeartDisease.Variables[7], exang: HeartDisease.Variables[8], oldpeak: HeartDisease.Variables[9], slopes: HeartDisease.Variables[10], ca: HeartDisease.Variables[11], thal: HeartDisease.Variables[12]) else {
             fatalError("Input Failed")
         }
         
@@ -57,6 +31,15 @@ class HeartDiseaseVC : UIViewController {
     }
     
     @IBAction func SubmitPressed(_ sender: UIButton) {
-        detect()
+         var count = 0
+            for textfields in heartTextfields{
+                HeartDisease.Variables.append(Double(textfields.text!) ?? HeartDisease.mean[count])
+                
+                count = count+1
+            }
+            detect()
+            for textfields in heartTextfields {
+                textfields.text = " "
+            }
     }
 }

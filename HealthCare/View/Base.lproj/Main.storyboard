@@ -401,19 +401,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="sly-QY-gXi"/>
                     <connections>
-                        <outlet property="SexEntered" destination="CnV-Rw-QXt" id="QdN-K6-9P9"/>
-                        <outlet property="ageEntered" destination="AFI-Hk-HnX" id="TX7-mD-Wjj"/>
-                        <outlet property="caEntered" destination="vxr-jW-IxA" id="2hg-H1-u42"/>
-                        <outlet property="cholEntered" destination="RmY-OL-Kel" id="zHk-FF-kPD"/>
-                        <outlet property="cpEntered" destination="G9A-A1-qpX" id="JkP-Ow-CKw"/>
-                        <outlet property="exandEntered" destination="Zhn-Yd-CwQ" id="4Jl-S3-lCn"/>
-                        <outlet property="fbsEntered" destination="qbL-Ni-N8u" id="bmg-LO-kAJ"/>
-                        <outlet property="oldpeakEntered" destination="VX7-Tn-QMx" id="fad-Qj-Hbz"/>
-                        <outlet property="restecgEntred" destination="4z4-uA-9co" id="SzK-zi-4Bd"/>
-                        <outlet property="slopesEntered" destination="GoS-tB-yA9" id="pZq-kR-KbH"/>
-                        <outlet property="thalEntered" destination="nwe-EL-lTB" id="aXF-yN-vqs"/>
-                        <outlet property="thalachEntered" destination="lU7-zP-Tqg" id="ApX-O7-yeb"/>
-                        <outlet property="trestbpsEntered" destination="BAN-iW-Xwl" id="RPC-ur-xjw"/>
+                        <outletCollection property="heartTextfields" destination="AFI-Hk-HnX" collectionClass="NSMutableArray" id="9nD-sU-rXg"/>
+                        <outletCollection property="heartTextfields" destination="CnV-Rw-QXt" collectionClass="NSMutableArray" id="NKs-R2-Ga2"/>
+                        <outletCollection property="heartTextfields" destination="G9A-A1-qpX" collectionClass="NSMutableArray" id="yie-q1-srV"/>
+                        <outletCollection property="heartTextfields" destination="BAN-iW-Xwl" collectionClass="NSMutableArray" id="cQB-J5-DaD"/>
+                        <outletCollection property="heartTextfields" destination="VX7-Tn-QMx" collectionClass="NSMutableArray" id="ILf-6v-cit"/>
+                        <outletCollection property="heartTextfields" destination="RmY-OL-Kel" collectionClass="NSMutableArray" id="voq-aJ-HPZ"/>
+                        <outletCollection property="heartTextfields" destination="GoS-tB-yA9" collectionClass="NSMutableArray" id="ECm-ad-V07"/>
+                        <outletCollection property="heartTextfields" destination="4z4-uA-9co" collectionClass="NSMutableArray" id="n0O-ds-xeu"/>
+                        <outletCollection property="heartTextfields" destination="lU7-zP-Tqg" collectionClass="NSMutableArray" id="mpe-Wp-M0R"/>
+                        <outletCollection property="heartTextfields" destination="vxr-jW-IxA" collectionClass="NSMutableArray" id="NvA-4c-aeM"/>
+                        <outletCollection property="heartTextfields" destination="qbL-Ni-N8u" collectionClass="NSMutableArray" id="O9f-Ld-M5J"/>
+                        <outletCollection property="heartTextfields" destination="nwe-EL-lTB" collectionClass="NSMutableArray" id="Zgq-WI-Iof"/>
+                        <outletCollection property="heartTextfields" destination="Zhn-Yd-CwQ" collectionClass="NSMutableArray" id="Nvh-9R-qjk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8J-P1-CrW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
