@@ -613,14 +613,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="dAu-GU-2rV"/>
                     <connections>
-                        <outlet property="Agetext" destination="dQs-NL-cJb" id="Sdr-Qh-JTO"/>
-                        <outlet property="BMItext" destination="bUc-03-FS2" id="yCz-cB-YMZ"/>
-                        <outlet property="DPFtext" destination="NoL-bP-MUJ" id="UeB-m4-M6V"/>
-                        <outlet property="Glucosetext" destination="aAX-Fq-ihc" id="oKE-zm-xbr"/>
-                        <outlet property="InsulinText" destination="tev-aI-FEl" id="BBx-Kw-D6q"/>
-                        <outlet property="bpText" destination="bnS-dg-iiz" id="KRd-RL-8hX"/>
-                        <outlet property="pregnancies" destination="8Ou-OI-nNT" id="Bba-dL-Wen"/>
-                        <outlet property="skinThickText" destination="OfY-4V-eX5" id="bdz-OK-6Y3"/>
+                        <outletCollection property="DiabetesTextField" destination="dQs-NL-cJb" collectionClass="NSMutableArray" id="Tqf-jG-0iR"/>
+                        <outletCollection property="DiabetesTextField" destination="8Ou-OI-nNT" collectionClass="NSMutableArray" id="oyi-X7-jtJ"/>
+                        <outletCollection property="DiabetesTextField" destination="aAX-Fq-ihc" collectionClass="NSMutableArray" id="HYD-ug-sjQ"/>
+                        <outletCollection property="DiabetesTextField" destination="bnS-dg-iiz" collectionClass="NSMutableArray" id="2ce-Qv-mDN"/>
+                        <outletCollection property="DiabetesTextField" destination="OfY-4V-eX5" collectionClass="NSMutableArray" id="zDk-RC-YNy"/>
+                        <outletCollection property="DiabetesTextField" destination="tev-aI-FEl" collectionClass="NSMutableArray" id="ncK-4p-hAw"/>
+                        <outletCollection property="DiabetesTextField" destination="bUc-03-FS2" collectionClass="NSMutableArray" id="Oee-sl-9BT"/>
+                        <outletCollection property="DiabetesTextField" destination="NoL-bP-MUJ" collectionClass="NSMutableArray" id="F0f-cJ-yeN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mie-H8-Ka3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
