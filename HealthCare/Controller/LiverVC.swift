@@ -11,6 +11,7 @@ import CoreML
 
 class LiverVC : UIViewController, UINavigationControllerDelegate{
 
+
     @IBOutlet var LiverTextField: [UITextField]!
     
     override func viewDidLoad() {
@@ -19,7 +20,7 @@ class LiverVC : UIViewController, UINavigationControllerDelegate{
     
     func detect(){
         
-        guard let output = try? Liver.model.prediction(Age: Liver.Variables[0], Gender: Liver.Variables[1], Total_Bilirubin: Liver.Variables[2], Direct_Bilirubin: Liver.Variables[3], Alkaline_Phosphotase: Liver.Variables[4], Alamine_Aminotransferase: Liver.Variables[4], Aspartate_Aminotransferase: Liver.Variables[5], Total_Protiens: Liver.Variables[6], Albumin: Liver.Variables[7], Albumin_and_Globulin_Ratio: Liver.Variables[8]) else{
+        guard let output = try? Liver.model.prediction(Age: Liver.Variables[0], Gender: Liver.Variables[1], Total_Bilirubin: Liver.Variables[2], Direct_Bilirubin: Liver.Variables[3], Alkaline_Phosphotase: Liver.Variables[4], Alamine_Aminotransferase: Liver.Variables[5], Aspartate_Aminotransferase: Liver.Variables[6], Total_Protiens: Liver.Variables[7], Albumin: Liver.Variables[8], Albumin_and_Globulin_Ratio: Liver.Variables[9]) else{
             fatalError()
         }
        
@@ -35,7 +36,13 @@ class LiverVC : UIViewController, UINavigationControllerDelegate{
             
             count = count+1
         }
-        detect()
+         count = 0
+        for a in Liver.Variables{
+            print(a)
+            print(count)
+            count = count + 1
+        }
+       // detect()
         for textfields in LiverTextField {
             textfields.text = " "
         }

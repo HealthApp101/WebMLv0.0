@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nJd-Od-DE7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -25,7 +25,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="e5x-Ke-DEU" kind="show" id="Zxb-Fx-y8g"/>
+                                    <segue destination="e5x-Ke-DEU" kind="show" id="xWH-aK-dds"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D8-gh-7Ks">
@@ -567,7 +567,6 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
-                                                    <action selector="SubmitPressed:" destination="PeZ-Bm-EuL" eventType="touchUpInside" id="7NW-bK-CQZ"/>
                                                     <action selector="submitPressed:" destination="4Lt-VB-WcL" eventType="touchUpInside" id="K9k-ma-IMW"/>
                                                 </connections>
                                             </button>
@@ -854,7 +853,6 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
-                                                    <action selector="SubmitPressed:" destination="PeZ-Bm-EuL" eventType="touchUpInside" id="oMf-Yw-TBc"/>
                                                     <action selector="submitPressed:" destination="dRl-0f-iys" eventType="touchUpInside" id="rQf-K6-CS2"/>
                                                 </connections>
                                             </button>
@@ -1080,8 +1078,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
-                                                    <action selector="SubmitPressed:" destination="PeZ-Bm-EuL" eventType="touchUpInside" id="8l0-rR-2B7"/>
-                                                    <action selector="submitPressed:" destination="e5x-Ke-DEU" eventType="touchUpInside" id="XwY-Vz-Pp9"/>
+                                                    <action selector="submitPressed:" destination="e5x-Ke-DEU" eventType="touchUpInside" id="2WL-E3-sl4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1089,7 +1086,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="7TU-by-nUq" firstAttribute="top" secondItem="vBM-Xj-47p" secondAttribute="top" id="Q18-4y-ATX"/>
-                                    <constraint firstAttribute="bottom" secondItem="7TU-by-nUq" secondAttribute="bottom" id="VY1-JO-Ncj"/>
                                     <constraint firstItem="7TU-by-nUq" firstAttribute="centerX" secondItem="vBM-Xj-47p" secondAttribute="centerX" id="bbA-6p-uek"/>
                                     <constraint firstAttribute="trailing" secondItem="7TU-by-nUq" secondAttribute="trailing" id="bdX-3j-uZX"/>
                                     <constraint firstItem="7TU-by-nUq" firstAttribute="leading" secondItem="vBM-Xj-47p" secondAttribute="leading" id="cDg-AC-qgX"/>
@@ -1109,6 +1105,7 @@
                         <viewLayoutGuide key="safeArea" id="r5n-pE-jFr"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZtL-K5-qgH"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outletCollection property="LiverTextField" destination="Bsc-j8-KPs" collectionClass="NSMutableArray" id="LMa-Xo-6ED"/>
                         <outletCollection property="LiverTextField" destination="bsd-8y-27j" collectionClass="NSMutableArray" id="ay0-l9-Abv"/>
@@ -1665,7 +1662,6 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
-                                                    <action selector="SubmitPressed:" destination="PeZ-Bm-EuL" eventType="touchUpInside" id="iPL-iF-Vva"/>
                                                     <action selector="submitPressed:" destination="zaj-Ub-r63" eventType="touchUpInside" id="cPL-Vu-Fpx"/>
                                                 </connections>
                                             </button>
